@@ -3,12 +3,13 @@ import ReactDom from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
 import reducers from './reducers';
 
 // Redux devtools
-const composeEnhancers = composeWithDevTools(applyMiddleware())
+const composeEnhancers = composeWithDevTools(applyMiddleware(reduxThunk));
 
 // Create Redux Store
 const store = createStore(
