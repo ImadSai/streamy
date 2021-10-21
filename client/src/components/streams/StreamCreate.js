@@ -62,8 +62,4 @@ const formWrapped = reduxForm({
     validate
 })(StreamCreate);
 
-const mapStateToProps = (state) => {
-    return null
-}
-
-export default connect(null, {createStream})(formWrapped);
+export default connect(null, { createStream })(formWrapped);

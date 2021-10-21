@@ -4,6 +4,11 @@
       "title": "my title",
       "description": "this is my awesome stream",
       "id": 1
+    },
+    {
+      "title": "Call of duty - Top 1",
+      "description": "My new records ! 108 WINS",
+      "id": 2
     }
   ]
 }
